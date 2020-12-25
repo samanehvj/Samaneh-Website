@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M8T4ELP3JD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M8T4ELP3JD');
+</script>
 	<title>Samaneh Vajdi - Personal Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="manifest.json">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -30,23 +38,148 @@
 
 </head>
 <style>
-	body{
-		font-family: "roboto";
-	}
     .name{
-background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(251 88 106));
+background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(251 88 106 ));
 font-family:"Dancing Script"
 ;
 font-size:40px;
   text-align: center;
-
-}
-.btn{
-	background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(251 88 106));
+} 
+.btn-social {
+	background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(251 88 106));
 	font-weight: bold;
+	color: black;
+}
+.btn-social:hover{
+	color: black;
+}
+/* .btn{
+	background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(251 88 106));
+	font-weight: bold;
+	width: 100px;
+  height: 40;
+  position: relative;
+  animation: mymove 5s infinite;
 
 }
 
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+} */
+
+
+.logo {
+ 
+  animation-name: spin;
+  animation-duration: 9.00s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.logo-mob {
+ 
+ animation-name: spin;
+ animation-duration: 9.00s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+
+/* ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  display: block;
+  list-style: none outside;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  animation: slidein 0.3s ease 1 both;
+}
+
+ul li:nth-child(2) {animation-delay: 0.15s}
+ul li:nth-child(3) {animation-delay: 0.30s}
+ul li:nth-child(4) {animation-delay: 0.45s}
+ul li:nth-child(5) {animation-delay: 0.60s}
+ul li:nth-child(6) {animation-delay: 0.75s}
+ul li:nth-child(7) {animation-delay: 0.90s}
+
+
+ul li a{
+  display:block;
+  text-decoration: none;
+  color: black;
+
+}
+
+@keyframes slidein{
+  from{
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+  
+  to{
+    transform: translate(0);
+    opacity: 1;
+  }
+} */
+
+.btn {
+  position: relative;
+  color: black;
+  border: none;
+  z-index: 2;
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(251 88 106));
+}
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  border: 1px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn:before{
+   top: 0;
+   left: 0;
+   border-bottom-color: transparent;
+   border-right-color: transparent;
+   border-top-color: #ff2349;
+   border-left-color:#ff2349;
+}
+.btn:after{
+   bottom: 0;
+   right: 0;
+   border-top-color: transparent;
+   border-left-color: transparent;
+   border-bottom-color:#ff2349;
+   border-right-color: #ff2349;
+}
+.btn:hover:before,
+.btn:hover:after {
+  border-color: #ff2349;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px #ff2349, 0 0 5px #ff2349 inset;
+}
 
 
 </style>
@@ -58,7 +191,7 @@ font-size:40px;
 			
 			<div class="col-lg-4 d-none d-lg-block fixed-top p-3">
 				<div class="col-4 col-lg-12">
-					<img class="img-fluid mb-3" src="svj.PNG">
+					<img class="img-fluid mb-3 ml-2 logo" src="svj.png">
 
 					<img class="img-fluid" src="samaneh-vajdi.PNG">
 				</div>
@@ -68,34 +201,33 @@ font-size:40px;
 			
 
 
-					<a  href="https://www.linkedin.com/in/samanehvj/" class="btn btn" target="_blank">LinkedIn</a>
+					<a  href="https://www.linkedin.com/in/samanehvj/" class="  btn-social " target="_blank">LinkedIn</a>
 					<br>
 					<br>
-					<a href="https://www.github.com/samanehvj/"  class="btn btn" target="_blank">GitHub</a>
-
+					<a href="https://www.github.com/samanehvj/"  class=" btn-social " target="_blank">GitHub</a>
 					<br>
 					<br>
-					<a href="resume.pdf"  class="btn btn" target="_blank">Resume</a>
-
-
+					
 				</div>
 			</div>
 
 			<div class="col-lg-4 d-block d-lg-none py-3 ">
 
 				<div class=" col-lg-12 m-auto">
-					<img class="img-fluid mb-3 center-block" src="svj.PNG" alt="samaneh vajdi">
+					<img class="img-fluid mb-3 center-block logo-mob" src="svj.png" alt="samaneh vajdi">
 
 					<img class="img-fluid" src="samaneh-vajdi.PNG" alt="samaneh vajdi">
 				</div>
 				<div class=" col-lg-12 m-auto">
 					<p class="p-2 mt-3">I am <strong>Samaneh Vajdi</strong> from Vancouver, I am doing a program in web development and here is some of my projects and homeworks done during the course of study</p>
 
-					<a  href="https://www.linkedin.com/in/samanehvj/" class="btn btn" target="_blank">LinkedIn</a>
+					<a  href="https://www.linkedin.com/in/samanehvj/" class=" btn-social " target="_blank">LinkedIn</a>
 					
 					
-					<a href="https://www.github.com/samanehvj/"  class="btn btn" target="_blank">GitHub</a>
-					<a href="resume.pdf"  class="btn btn" target="_blank">Resume</a>
+				    <a href="https://www.github.com/samanehvj/"  class=" btn-social ml-2" target="_blank">GitHub</a>
+				    
+				   
+					<!--<a href="/resume.pdf"  class="btn btn" target="_blank">Resume</a>-->
 
 				</div>
 			</div>
@@ -106,10 +238,10 @@ font-size:40px;
 
 			<h1 class="mt-3 name"><strong>Samaneh Vajdi</strong></h1>
 
-			<h2 class="font-weight-bold mt-4">Skills & Endorsements </h2>
-			<div class="row">
+                <h2 class="font-weight-bold mt-4">Skills & Endorsements </h2>
+            	<div class="row">
 
-                <ul class= "col-lg-6 px-4">
+                <ul class= "col-lg-6 px-4 list">
                   <li>PHP</li>
                   <li>Git</li>
                   <li>HTML</li>
@@ -126,7 +258,7 @@ font-size:40px;
                 </ul>  
                 
             
-                 <ul class="col-lg-6 px-4">
+                 <ul class="col-lg-6 px-4 list">
                  
                   <li>Project Management</li>
                   <li>Agile Project Management</li>
